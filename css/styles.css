@@ -1,0 +1,68 @@
+@import "https://fonts.googleapis.com/css?family=Source+Code+Pro";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+  min-height: 100%;
+  height: 100%;
+  font-family: "Source Code Pro", monospace;
+}
+
+.containers {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.binary-container {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.binary {
+  font-size: 50px;
+}
+
+.play-pause {
+  font-family: serif;
+  font-size: 30px;
+  margin-top: 20px;
+  /* cursor: pointer; */
+}
+
+
+.play {
+
+  font-size: 15px;
+  border: 3px solid;
+  margin-top: 10px;
+  border-radius: 3px;
+  position: relative;
+}
+/* 
+.play:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-right: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 10px solid black;
+  transform: translate(calc(-50% + 5px), -50%);
+}
+
+.pause:after {
+  border: 6px solid black;
+  transform: translate(-50%, -50%);
+} */
+

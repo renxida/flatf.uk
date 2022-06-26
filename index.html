@@ -1,6 +1,26 @@
-<img src="img/fffcover.jpg" alt="The Flattest F">
-<audio controls loop>
-  <source src="flatfuk.ogg" type="audio/ogg">
-  Your browser does not support the audio element.
-</audio>
+<img src="img/fffcover.jpg" alt="The Flattest F" id="flatfuk">
+
+<script src="loopify.js" type="text/javascript"></script>
+<script>
+    loopify("flatfuk.ogg",ready);
+
+
+
+
+    function ready(err,loop){
+
+      if (err) {
+        console.warn(err);
+      }
+
+      document.getElementById("flatfuk").addEventListener("click",function(){
+        loop.play();
+      });
+      document.getElementById("flatfuk").addEventListener("click",function(){
+        loop.stop();
+      });
+    }
+
+
+</script>
 

@@ -32,6 +32,10 @@
 
     function ready(err,loop){
 
+      if(new Date().getDay() != 5){
+            location.assign('not_friday.html');
+      }
+
       if (err) {
         console.warn(err);
       }
@@ -39,9 +43,7 @@
       isplaying = 0;
 
       document.getElementById("start").addEventListener("click",function(){
-        if(new Date().getDay() != 5){
-            location.assign('not_friday.html');
-        }
+
 
 
         if(isplaying == 0){
